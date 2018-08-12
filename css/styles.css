@@ -1,0 +1,112 @@
+.container{
+    display: flex;
+    height: 100%;
+    width: 80%;
+  
+}
+h4 {
+  color: white;
+  text-align: center;
+  font-family: 'Calibri';
+  font-size: 16px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    float: right;
+    
+  }
+  .full-image {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+  }
+  
+  .leftdiv{
+    height: 60%;
+  }
+
+  
+  /* Full-width input fields */
+ 
+  .form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgb(52, 62, 71);
+  }
+  
+
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: rgb(19, 194, 25);
+    border-radius: 5px;
+    color: white;
+    padding: 16px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+ 
+ div > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    }
+
+    .texticon {
+        background: url('C:/Users/OLUSAYO/Desktop/Projects/ivoprojects/img/Flag.svg') no-repeat 10px;
+        padding-left: 50px;
+        padding-right: 5px;
+        width:20%;
+        margin-right: 5px;
+      }
+    .textbox{
+      height: 40px;
+      border: none;
+      background-color: slategrey;
+      border-radius: 5px;
+    }
+    .textbox2{
+      padding-left: 20px;
+      margin-bottom: 5px;
+
+    }
+    .textbox3{
+      width:100%;
+      padding-left: 5px;
+    }
+    .textbox-div{
+      display: inline-flex;
+      width: 300px;
+      margin-bottom: 5px;
+  
+    }
+    /* placeholder */
+    ::-webkit-input-placeholder { /* Chrome */
+      color: white;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: white;
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+      color: white;
+      opacity: 1;
+    }
+    .div-container{
+      position: absolute;
+      display: inline-flex;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+   
