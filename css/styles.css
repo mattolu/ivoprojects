@@ -4,19 +4,41 @@
     width: 80%;
   
 }
-h4 {
+h4{
   color: white;
   text-align: center;
-  font-family: 'Calibri';
-  font-size: 16px;
+  font-weight: normal;
 }
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    float: right;
-    
+nav {
+  text-align: center;
+  margin: 20px 0 0 ;
+  padding: 10px 0;
+  float: right;
   }
+  
+  nav ul{
+    list-style: none;
+    margin: 0 30px;
+    padding: 0;
+  }
+  
+  nav li {
+     display: inline-block;
+     padding: 5px 5px;
+  }
+  
+ nav a{
+    font-weight: normal;
+    padding: 10px 5px;
+    font-size: 1.2em;
+    color: white;
+    text-decoration-line: none;
+  }
+  a:hover{
+    color: darkgreen;
+  }
+ 
+
   .full-image {
     position: absolute;
     width:100%;
@@ -24,19 +46,21 @@ nav ul {
     background: no-repeat 50% 50%;
     background-size: cover;
   }
-  
-  .leftdiv{
-    height: 60%;
-  }
+
 
   
   /* Full-width input fields */
+  /* .div-container{
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 60%;
+    top: 0;
+    
+  } */
  
-  .form-container {
-    max-width: 300px;
-    padding: 20px;
-    background-color: rgb(52, 62, 71);
-  }
   
 
   
@@ -46,10 +70,10 @@ nav ul {
     border-radius: 5px;
     color: white;
     padding: 16px 20px;
-    margin-top: 10px;
+    width: 100%;
     border: none;
     cursor: pointer;
-    width: 100%;
+    
     opacity: 0.9;
   }
   
@@ -57,40 +81,41 @@ nav ul {
     opacity: 1;
   }
  
- div > img{
-    height: 100%;
+ 
+  .textbox-div{
+    display: inline-flex;
     width: 100%;
-    object-fit: contain;
     }
-
     .texticon {
         background: url('C:/Users/OLUSAYO/Desktop/Projects/ivoprojects/img/Flag.svg') no-repeat 10px;
         padding-left: 50px;
         padding-right: 5px;
-        width:20%;
-        margin-right: 5px;
+        max-width:38%;
+        margin-right: 2%;
+        height: 40px;
+        border: none;
+        background-color: slategrey;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      .textbox2{
+        width: 60%;
       }
     .textbox{
       height: 40px;
       border: none;
       background-color: slategrey;
       border-radius: 5px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      width: 100%;
+      padding-left: 10px;
+      box-sizing: border-box;
+     
     }
-    .textbox2{
-      padding-left: 20px;
-      margin-bottom: 5px;
-
-    }
-    .textbox3{
-      width:100%;
-      padding-left: 5px;
-    }
-    .textbox-div{
-      display: inline-flex;
-      width: 300px;
-      margin-bottom: 5px;
-  
-    }
+   
     /* placeholder */
     ::-webkit-input-placeholder { /* Chrome */
       color: white;
@@ -102,11 +127,90 @@ nav ul {
       color: white;
       opacity: 1;
     }
-    .div-container{
+  
+    /* .div-container{
       position: absolute;
       display: inline-flex;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
-   
+    div > img{
+      height: 70%;
+      width: 50%;
+      object-fit: contain;
+      }
+      .form-container {
+        height: 70%;
+      width: 50%;
+        padding: 20px;
+        background-color: rgb(52, 62, 71);
+      } */
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+.column {
+  overflow: hidden;
+  object-fit: fill;
+  flex: 50%;
+}
+div>img{
+overflow: hidden;
+  
+ border-style: outset;
+  max-width: 100%;
+  max-height: 100%;
+  border-image: fill;
+  
+}
+.form-container {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+  border-radius: 5px,0 ;
+  padding: 10px;
+  background-color: rgb(52, 62, 71);
+}
+
+
+
+
+
+      /* .form-container {
+        height: 100%;
+        border: none;
+        max-width:350px;
+        padding: 20px;
+        background-color: rgb(52, 62, 71);
+      } */
+    /* .col-container {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      height: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .col {
+      flex: 1;
+      padding: 16px;
+      max-width: 50%;
+      max-height: 50%;
+      
+    } */
