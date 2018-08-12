@@ -1,3 +1,13 @@
+/* ************************************
+MAIN body
+********************************** */
+
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 .container{
     display: flex;
     height: 100%;
@@ -9,6 +19,24 @@ h4{
   text-align: center;
   font-weight: normal;
 }
+/* Background image */
+.full-image {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+}
+
+
+@font-face {
+  font-family: DeliciousRoman;
+  src: url(/Delicious-Roman.otf);
+  }
+/* ************************************
+NAVIGATION
+********************************** */
+
 nav {
   text-align: center;
   margin: 20px 0 0 ;
@@ -38,33 +66,40 @@ nav {
     color: darkgreen;
   }
  
+/* for the columns group with pix */
+.row {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+.column {
+  overflow: hidden;
+  object-fit: fill;
+  flex: 50%;
+}
+div>img{
+ border-style: outset;
+  max-width: 100%;
+  max-height: 100%;  
+}
 
-  .full-image {
-    position: absolute;
-    width:100%;
-    height: 100%;
-    background: no-repeat 50% 50%;
-    background-size: cover;
-  }
-
-
-  
-  /* Full-width input fields */
-  /* .div-container{
-
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    height: 60%;
-    top: 0;
-    
-  } */
  
-  
-
-  
-  /* Set a style for the submit button */
+  /* ***********************************
+  FORM
+  **************************************/
+  .form-container {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    border-radius: 5px,0 ;
+    padding: 10px;
+    background-color: rgb(52, 62, 71);
+  }
+  /* for the submit button */
   .btn {
     background-color: rgb(19, 194, 25);
     border-radius: 5px;
@@ -81,7 +116,7 @@ nav {
     opacity: 1;
   }
  
- 
+ /* for the text fields  */
   .textbox-div{
     display: inline-flex;
     width: 100%;
@@ -128,89 +163,3 @@ nav {
       opacity: 1;
     }
   
-    /* .div-container{
-      position: absolute;
-      display: inline-flex;
-      box-sizing: border-box;
-      width: 100%;
-      height: 100%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    div > img{
-      height: 70%;
-      width: 50%;
-      object-fit: contain;
-      }
-      .form-container {
-        height: 70%;
-      width: 50%;
-        padding: 20px;
-        background-color: rgb(52, 62, 71);
-      } */
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-* {
-  box-sizing: border-box;
-}
-.row {
-  display: flex;
-  width: 50%;
-  height: 50%;
-  top: 50%;
-  left: 50%;
-  position: relative;
-  transform: translate(-50%, -50%);
-}
-.column {
-  overflow: hidden;
-  object-fit: fill;
-  flex: 50%;
-}
-div>img{
-overflow: hidden;
-  
- border-style: outset;
-  max-width: 100%;
-  max-height: 100%;
-  border-image: fill;
-  
-}
-.form-container {
-  max-width: 100%;
-  max-height: 100%;
-  border: none;
-  border-radius: 5px,0 ;
-  padding: 10px;
-  background-color: rgb(52, 62, 71);
-}
-
-
-
-
-
-      /* .form-container {
-        height: 100%;
-        border: none;
-        max-width:350px;
-        padding: 20px;
-        background-color: rgb(52, 62, 71);
-      } */
-    /* .col-container {
-      display: flex;
-      flex-direction: row;
-      width: 80%;
-      height: 70%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .col {
-      flex: 1;
-      padding: 16px;
-      max-width: 50%;
-      max-height: 50%;
-      
-    } */
